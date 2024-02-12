@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@300;400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.outergrid-container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+}
+
+.rightnavbar {
+  grid-row: 1/-1;
+  background-color: #0ea5e9;
+  grid-column: span 2;
+}
+.uppernavbar {
+  grid-column: 3/-1;
+  background-color: #f7fee7;
+  grid-row: span 3;
+}
+
+.maincontent {
+  grid-row: 4/-1;
+  background-color: #d4d4d4;
+  grid-column: span 8;
+}
+
+.logo-svg {
+  fill: white;
+  height: 3rem;
+  width: 3rem;
+}
+
+.logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: white;
+  padding: 1em;
+  margin-bottom: 1rem;
+}
+
+.logo-h1 {
+  font-weight: 900;
+  font-size: 1.5rem;
+  margin-left: 10px;
+}
+.main-menu {
+  margin-left: 20px;
+}
+.menu-svg {
+  fill: white;
+  height: 1.5rem;
+  width: 1.5rem;
+  margin-right: 15px;
+}
+.menu-list {
+  display: flex;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  align-items: center;
+  color: white;
+  font-weight: 900;
+}
+.bottom-menu {
+  margin-top: 3rem;
+}
