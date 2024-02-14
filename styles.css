@@ -84,6 +84,7 @@ body {
   padding-bottom: 20px;
   padding-right: 30px;
   padding-left: 30px;
+  box-shadow: 20px 20px 5px black;
 }
 .upper-svg {
   fill: black;
@@ -153,4 +154,26 @@ button {
   font-weight: 900;
   font-size: 20px;
   margin-right: 20px;
+}
+
+/*Projects*/
+
+.project-grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.grid-items {
+  background-color: var(--primary-color2);
+  padding: 1rem;
+}
+
+.icons {
+  fill: black;
+  height: 1.5rem;
+  width: 1.5rem;
+  margin-right: 15px;
+  display: flex;
+  justify-content: flex-end;
 }
