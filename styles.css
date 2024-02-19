@@ -27,11 +27,11 @@ body {
 .uppernavbar {
   grid-column: 3/-1;
   background-color: var(--primary-color2);
-  grid-row: span 3;
+  grid-row: span 2;
 }
 
 .maincontent {
-  grid-row: 4/-1;
+  grid-row: 3/-1;
   background-color: var(--primary-color3);
   grid-column: span 8;
 }
@@ -128,7 +128,6 @@ img,
 .intro-section {
   display: flex;
   margin-top: 20px;
-  margin-bottom: 20px;
   align-items: center;
   justify-content: space-between;
 }
@@ -158,10 +157,24 @@ button {
 
 /*Projects*/
 
+.maincontent{
+  display:grid;
+  grid-template-columns: repeat(10,1fr);
+}
 .project-grid-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
+
+}
+
+.projects{
+  padding:20px;
+  grid-column:1/4;
+}
+
+.side-section{
+  grid-column:5/10;
 }
 
 .grid-items {
